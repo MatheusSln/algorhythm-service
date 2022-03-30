@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>dotnet-AlgorhythmService-5CB7FAFF-9EBC-46D4-9877-E65089A80C38</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AlgorhythmService.Data\AlgorhythmService.Data.csproj" />
+    <ProjectReference Include="..\AlgorhythmService.Handler\AlgorhythmService.Handler.csproj" />
+    <ProjectReference Include="..\AlgorhythmService.Shared\AlgorhythmService.Shared.csproj" />
+  </ItemGroup>
+</Project>

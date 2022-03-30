@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgorhythmService", "AlgorhythmService\AlgorhythmService.csproj", "{36ED4E9E-9C3F-4299-ABD2-EEC1A1A7D730}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorhythmService.Shared", "AlgorhythmService.Shared\AlgorhythmService.Shared.csproj", "{D501160D-82A3-4DFB-8B10-51D8A8ADBCA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorhythmService.Handler", "AlgorhythmService.Handler\AlgorhythmService.Handler.csproj", "{A242CAAC-0142-4915-912F-A787B8E0D1B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorhythmService.Data", "AlgorhythmService.Data\AlgorhythmService.Data.csproj", "{6AE5D0C5-BEA2-48AA-8E13-E85A8B790D21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36ED4E9E-9C3F-4299-ABD2-EEC1A1A7D730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36ED4E9E-9C3F-4299-ABD2-EEC1A1A7D730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36ED4E9E-9C3F-4299-ABD2-EEC1A1A7D730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36ED4E9E-9C3F-4299-ABD2-EEC1A1A7D730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D501160D-82A3-4DFB-8B10-51D8A8ADBCA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D501160D-82A3-4DFB-8B10-51D8A8ADBCA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D501160D-82A3-4DFB-8B10-51D8A8ADBCA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D501160D-82A3-4DFB-8B10-51D8A8ADBCA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A242CAAC-0142-4915-912F-A787B8E0D1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A242CAAC-0142-4915-912F-A787B8E0D1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A242CAAC-0142-4915-912F-A787B8E0D1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A242CAAC-0142-4915-912F-A787B8E0D1B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AE5D0C5-BEA2-48AA-8E13-E85A8B790D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE5D0C5-BEA2-48AA-8E13-E85A8B790D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE5D0C5-BEA2-48AA-8E13-E85A8B790D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE5D0C5-BEA2-48AA-8E13-E85A8B790D21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC30B832-FA3F-468F-8E04-45DEB9173340}
+	EndGlobalSection
+EndGlobal
