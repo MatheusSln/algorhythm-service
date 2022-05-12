@@ -1,5 +1,5 @@
 using AlgorhythmService.Data.Repository;
-using AlgorhythmService.Handler.Exercice.Repository;
+using AlgorhythmService.Handler.Exercise.Repository;
 using AlgorhythmService.Handler.Handler;
 using AlgorhythmService.Handler.Handler.Interface;
 using AlgorhythmService.Shared;
@@ -58,7 +58,7 @@ namespace AlgorhythmService
 
         private static void ConfigureRepository(IServiceCollection services)
         {
-            services.AddTransient<IExerciceRepository, ExerciceRepository>();
+            services.AddTransient<IExerciseRepository, ExerciseRepository>();
         }
 
         private static void ConfigureDB(IServiceCollection services)

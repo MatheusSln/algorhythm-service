@@ -9,7 +9,7 @@ namespace AlgorhythmService
 {
     public class Worker : BackgroundService
     {
-        private IDeletionHandler _deletionHandler;
+        private readonly IDeletionHandler _deletionHandler;
 
         public Worker(IDeletionHandler deletionHandler)
         {

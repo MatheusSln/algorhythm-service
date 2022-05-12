@@ -1,8 +1,9 @@
-﻿using AlgorhythmService.Handler.Exercice.Repository;
+﻿using AlgorhythmService.Handler.Exercise.Repository;
 using AlgorhythmService.Handler.Handler.Interface;
 using AlgorhythmService.Shared;
 using AlgorhythmService.Shared.UnitTest;
 using System;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -14,11 +15,11 @@ namespace AlgorhythmService.Handler.Handler
 
         private readonly TimeSpan DEFAULT_INITIALIZE_TIME = new TimeSpan(01, 00, 00);
 
-        private AppSettingsRoot _appSettingsRoot;
+        private readonly AppSettingsRoot _appSettingsRoot;
 
-        private IExerciceRepository _exerciceRepository;
+        private readonly IExerciseRepository _exerciceRepository;
 
-        public DeletionHandler(AppSettingsRoot appSettingsRoot, IExerciceRepository exerciceRepository)
+        public DeletionHandler(AppSettingsRoot appSettingsRoot, IExerciseRepository exerciceRepository)
         {
             _appSettingsRoot = appSettingsRoot;
             _exerciceRepository = exerciceRepository;
@@ -34,7 +35,17 @@ namespace AlgorhythmService.Handler.Handler
                     continue;
                 }
 
-                await _exerciceRepository.DeleteOldExercicesAsync();
+                var exercises = await _exerciceRepository.GetExercisesToDelete();
+
+                if (exercises.Any())
+                {
+                    await _exerciceRepository.DeleteOldAlternativesByExercises(exercises);
+
+                    await _exerciceRepository.DeleteOldExercisesRealizedByUsers(exercises);
+
+                    await _exerciceRepository.DeleteOldExercicesAsync(exercises);
+                }
+
 
                 await Delay(stoppingToken);
             }
